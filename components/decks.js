@@ -45,7 +45,7 @@ class decks extends Component {
 
         return (
             <View style={styles.deck}>
-                {Object.entries(this.state.decks).map((data)=>(
+                {this.state.decks && Object.entries(this.state.decks).map((data)=>(
                     <Deck data={data} navigation={this.props.navigation} key={data} />
                 ))}
             </View>

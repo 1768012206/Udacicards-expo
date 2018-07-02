@@ -2,11 +2,9 @@ import React,{Component} from 'react'
 import { View, Text, StyleSheet, Button, Animated} from 'react-native'
 import {lightPurp, blue, red, gray} from '../utils/colors'
 class quiz extends Component {
-    constructor(props) {
-     super(props);
-     this.state = {
-       fadeAnim: new Animated.Value(1), // init opacity 0
-     };
+    constructor() {
+     super();
+
    }
     render(){
         const { params } = this.props.navigation.state

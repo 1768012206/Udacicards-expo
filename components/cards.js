@@ -20,6 +20,7 @@ class cards extends Component {
                     }
                 />
                 <Button
+                    disabled={params.data[1].questions.length <= 0}
                     title="Start Quiz"
                     color= {lightPurp}
                     onPress={() => {

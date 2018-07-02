@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import { View, Text, StyleSheet,Button} from 'react-native'
-import {gray} from "../utils/colors";
+import {gray ,pink} from "../utils/colors";
 
 
 class result extends Component {
@@ -15,6 +15,13 @@ class result extends Component {
                     color={gray}
                     onPress={() =>
                         navigation.navigate('Decks')
+                    }
+            />
+            <Button style={styles.button}
+                    title="Restart Quiz"
+                    color={pink}
+                    onPress={() =>
+                        navigation.navigate('Quiz',{data: params.data, num: 0, correct: 0})
                     }
             />
         </View>
